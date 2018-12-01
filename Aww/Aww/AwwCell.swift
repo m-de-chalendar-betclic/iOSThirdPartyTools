@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Reusable
 
-final class AwwCell: UITableViewCell {
+final class AwwCell: UITableViewCell, Reusable {
 
     func setup(aww: Aww) {
         imageView?.image = aww.image

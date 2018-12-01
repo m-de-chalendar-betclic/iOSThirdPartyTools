@@ -45,9 +45,7 @@ extension ViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AwwCell", for: indexPath) as? AwwCell else {
-            fatalError("Cell wasn't registered")
-        }
+        let cell = tableView.dequeueReusableCell(for: indexPath) as AwwCell
         cell.setup(aww: elements[indexPath.row])
         return cell
     }

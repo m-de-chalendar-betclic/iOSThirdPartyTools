@@ -7,33 +7,20 @@
 //
 
 import UIKit
+import Reusable
 
-final class BetclicView: UIView {
+final class BetclicView: UIView, NibOwnerLoadable {
 
     @IBOutlet private weak var imageView: UIImageView!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        loadNib()
+        loadNibContent()
     }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        loadNib()
-    }
-
-    private func loadNib() {
-        let nib = UINib(nibName: "BetclicView", bundle: Bundle(for: type(of: self)))
-        if let nibContent = nib.instantiate(withOwner: self, options: nil) as? [UIView] {
-            for view in nibContent {
-                view.translatesAutoresizingMaskIntoConstraints = false
-                addSubview(view)
-                view.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-                view.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-                view.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-                view.topAnchor.constraint(equalTo: topAnchor).isActive = true
-            }
-        }
+        loadNibContent()
     }
 
 }
