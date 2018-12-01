@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8495530893DB9A173CC456F3 /* Pods_Aww.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4ED6C038163051C0208C8C8 /* Pods_Aww.framework */; };
-        9C84017221B2C4F3007ECFFC /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84017121B2C4F2007ECFFC /* Assets.swift */; };
-        9C84017421B2D261007ECFFC /* BetclicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C84017321B2D261007ECFFC /* BetclicView.xib */; };
-        9C84017621B2D3B9007ECFFC /* BetclicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84017521B2D3B9007ECFFC /* BetclicView.swift */; };
+		9C84017221B2C4F3007ECFFC /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84017121B2C4F2007ECFFC /* Assets.swift */; };
+		9C84017421B2D261007ECFFC /* BetclicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C84017321B2D261007ECFFC /* BetclicView.xib */; };
+		9C84017621B2D3B9007ECFFC /* BetclicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84017521B2D3B9007ECFFC /* BetclicView.swift */; };
 		9CBB745E21B2AC2B004D7FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB745D21B2AC2B004D7FC4 /* AppDelegate.swift */; };
 		9CBB746021B2AC2B004D7FC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB745F21B2AC2B004D7FC4 /* ViewController.swift */; };
 		9CBB746321B2AC2B004D7FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB746121B2AC2B004D7FC4 /* Main.storyboard */; };
@@ -22,9 +22,9 @@
 
 /* Begin PBXFileReference section */
 		95976E999FCB27173EFFF27A /* Pods-Aww.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aww.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aww/Pods-Aww.release.xcconfig"; sourceTree = "<group>"; };
-        9C84017121B2C4F2007ECFFC /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
-        9C84017321B2D261007ECFFC /* BetclicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BetclicView.xib; sourceTree = "<group>"; };
-        9C84017521B2D3B9007ECFFC /* BetclicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetclicView.swift; sourceTree = "<group>"; };
+		9C84017121B2C4F2007ECFFC /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		9C84017321B2D261007ECFFC /* BetclicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BetclicView.xib; sourceTree = "<group>"; };
+		9C84017521B2D3B9007ECFFC /* BetclicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetclicView.swift; sourceTree = "<group>"; };
 		9CBB745A21B2AC2B004D7FC4 /* Aww.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aww.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBB745D21B2AC2B004D7FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBB745F21B2AC2B004D7FC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -244,12 +244,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Aww/Pods-Aww-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-20/iOS/RevealServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

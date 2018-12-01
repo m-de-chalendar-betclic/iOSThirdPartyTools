@@ -6,5 +6,6 @@ target 'Aww' do
   pod 'SwiftLint'
   pod 'SwiftGen'
   pod 'Reusable'
+  pod 'Reveal-SDK', :configurations => ['Debug']
 
 end
