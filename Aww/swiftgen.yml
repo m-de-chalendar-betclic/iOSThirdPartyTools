@@ -1,0 +1,6 @@
+xcassets:
+  inputs:
+    - Aww/Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: Aww/Assets.swift

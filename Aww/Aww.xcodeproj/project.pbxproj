@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8495530893DB9A173CC456F3 /* Pods_Aww.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4ED6C038163051C0208C8C8 /* Pods_Aww.framework */; };
+        9C84017221B2C4F3007ECFFC /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84017121B2C4F2007ECFFC /* Assets.swift */; };
         9C84017421B2D261007ECFFC /* BetclicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C84017321B2D261007ECFFC /* BetclicView.xib */; };
         9C84017621B2D3B9007ECFFC /* BetclicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C84017521B2D3B9007ECFFC /* BetclicView.swift */; };
 		9CBB745E21B2AC2B004D7FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB745D21B2AC2B004D7FC4 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		95976E999FCB27173EFFF27A /* Pods-Aww.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aww.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aww/Pods-Aww.release.xcconfig"; sourceTree = "<group>"; };
+        9C84017121B2C4F2007ECFFC /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
         9C84017321B2D261007ECFFC /* BetclicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BetclicView.xib; sourceTree = "<group>"; };
         9C84017521B2D3B9007ECFFC /* BetclicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetclicView.swift; sourceTree = "<group>"; };
 		9CBB745A21B2AC2B004D7FC4 /* Aww.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aww.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 		9CBB745C21B2AC2B004D7FC4 /* Aww */ = {
 			isa = PBXGroup;
 			children = (
+				9C84017121B2C4F2007ECFFC /* Assets.swift */,
 				9CBB745D21B2AC2B004D7FC4 /* AppDelegate.swift */,
 				9CBB745F21B2AC2B004D7FC4 /* ViewController.swift */,
 				9CBB747321B2B165004D7FC4 /* AwwCell.swift */,
@@ -108,6 +111,7 @@
 			buildConfigurationList = 9CBB746C21B2AC2D004D7FC4 /* Build configuration list for PBXNativeTarget "Aww" */;
 			buildPhases = (
 				2D23D8ECD7CFE4726F342C3A /* [CP] Check Pods Manifest.lock */,
+				9C84017021B2C2AA007ECFFC /* Swiftgen */,
 				9C84016F21B2BEDB007ECFFC /* Swiftlint */,
 				9CBB745621B2AC2B004D7FC4 /* Sources */,
 				9CBB745721B2AC2B004D7FC4 /* Frameworks */,
@@ -210,6 +214,25 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		9C84017021B2C2AA007ECFFC /* Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				Aww/Assets.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -221,6 +244,7 @@
 				9C84017621B2D3B9007ECFFC /* BetclicView.swift in Sources */,
 				9CBB747421B2B165004D7FC4 /* AwwCell.swift in Sources */,
 				9CBB745E21B2AC2B004D7FC4 /* AppDelegate.swift in Sources */,
+				9C84017221B2C4F3007ECFFC /* Assets.swift in Sources */,
 				9CBB747221B2ADD2004D7FC4 /* Aww.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,5 +4,6 @@ target 'Aww' do
   use_frameworks!
 
   pod 'SwiftLint'
+  pod 'SwiftGen'
 
 end

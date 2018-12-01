@@ -12,11 +12,11 @@ class ViewController: UIViewController {
 
     // swiftlint:disable line_length
     private let elements: [Aww] = [
-        Aww(image: UIImage(named: "aww1")!, description: "Cutest father son picture I've ever seen"),
-        Aww(image: UIImage(named: "aww2")!, description: "This is Nala, she frequently stays at the kennel I work at :)"),
-        Aww(image: UIImage(named: "aww3")!, description: "Those ears"),
-        Aww(image: UIImage(named: "aww4")!, description: "I'm convinced we've adopted a stuffed animal."),
-        Aww(image: UIImage(named: "aww5")!, description: "I’ve waited 26 years to be able to get my own puppy. Reddit, meet Odin!")
+        Aww(image: Asset.aww1.image, description: "Cutest father son picture I've ever seen"),
+        Aww(image: Asset.aww2.image, description: "This is Nala, she frequently stays at the kennel I work at :)"),
+        Aww(image: Asset.aww3.image, description: "Those ears"),
+        Aww(image: Asset.aww4.image, description: "I'm convinced we've adopted a stuffed animal."),
+        Aww(image: Asset.aww5.image, description: "I’ve waited 26 years to be able to get my own puppy. Reddit, meet Odin!")
     ]
     // swiftlint:enable line_length
 
