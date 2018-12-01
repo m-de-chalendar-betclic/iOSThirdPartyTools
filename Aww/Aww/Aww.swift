@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 final class Aww {
-    let image : UIImage
+    let image: UIImage
     let description: String
     private(set) var isFavorite: Bool
 
@@ -20,8 +20,7 @@ final class Aww {
         self.isFavorite = false
     }
 
-    func ToggleFavorite() {
-        isFavorite = !isFavorite
+    func toggleFavorite() {
+        isFavorite.toggle()
     }
 }
-
